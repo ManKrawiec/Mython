@@ -112,5 +112,10 @@ Jeśli chcesz przygotować paczkę pod Arch Linux i `yay`, pliki są w [packagin
 Docelowo po publikacji do AUR instalacja będzie wyglądała tak:
 
 ```bash
-yay -S mython-git
+yay -S mython
 ```
+
+W repo są przygotowane dwa warianty:
+
+- `packaging/aur/mython` dla stabilnego pakietu `mython`
+- `packaging/aur/mython-git` dla pakietu śledzącego GitHub `mython-git`
