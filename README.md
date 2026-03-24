@@ -33,7 +33,7 @@ python main.py example.ps --emit-python
 Jeśli chcesz odpalać `Mython` z dowolnego katalogu, zainstaluj projekt jako lokalną komendę:
 
 ```bash
-python -m pip install -e /home/mankrawiec/github/Mython
+python -m pip install -e ~/github/Mython
 ```
 
 Po tym możesz uruchamiać pliki `.ps` z każdego miejsca:
@@ -47,7 +47,7 @@ Przykład:
 
 ```bash
 cd /tmp
-mython /home/mankrawiec/github/Mython/example.ps
+mython ~/github/Mython/example.ps
 ```
 
 ## Struktura projektu
@@ -72,26 +72,26 @@ Mython/
 
 Masz już gotowe wsparcie do codziennej pracy w VS Code:
 
-1. Pliki `.ps` są skojarzone z językiem `mython` przez [.vscode/settings.json](/home/mankrawiec/github/Mython/.vscode/settings.json).
-2. Jest lokalne rozszerzenie z koloryzacją składni w [vscode-mython/package.json](/home/mankrawiec/github/Mython/vscode-mython/package.json).
-3. Jest task do uruchamiania bieżącego pliku w [.vscode/tasks.json](/home/mankrawiec/github/Mython/.vscode/tasks.json).
-4. Jest konfiguracja debuggera w [.vscode/launch.json](/home/mankrawiec/github/Mython/.vscode/launch.json).
+1. Pliki `.ps` są skojarzone z językiem `mython` przez [.vscode/settings.json](./.vscode/settings.json).
+2. Jest lokalne rozszerzenie z koloryzacją składni w [vscode-mython/package.json](./vscode-mython/package.json).
+3. Jest task do uruchamiania bieżącego pliku w [.vscode/tasks.json](./.vscode/tasks.json).
+4. Jest konfiguracja debuggera w [.vscode/launch.json](./.vscode/launch.json).
 
 ## Jak programować w VS Code
 
 1. Otwórz folder projektu:
 
 ```bash
-code /home/mankrawiec/github/Mython
+code ~/github/Mython
 ```
 
 2. Jeśli VS Code nie załaduje od razu lokalnego wsparcia, użyj:
 `Developer: Install Extension from Location...`
 
 3. Wskaż folder:
-`/home/mankrawiec/github/Mython/vscode-mython`
+`~/github/Mython/vscode-mython`
 
-4. Otwórz dowolny plik `.ps`, na przykład [example.ps](/home/mankrawiec/github/Mython/example.ps).
+4. Otwórz dowolny plik `.ps`, na przykład [example.ps](./example.ps).
 
 5. Uruchamianie:
 - `Ctrl+Shift+B` odpala task `Run Current Mython File`
