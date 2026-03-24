@@ -1,0 +1,35 @@
+{
+  "name": "mython-support",
+  "displayName": "Mython Support",
+  "description": "Podstawowe wsparcie VS Code dla języka Mython.",
+  "version": "0.0.1",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "mython",
+        "aliases": [
+          "Mython",
+          "Polski Script"
+        ],
+        "extensions": [
+          ".ps"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "mython",
+        "scopeName": "source.mython",
+        "path": "./syntaxes/mython.tmLanguage.json"
+      }
+    ]
+  }
+}
