@@ -104,3 +104,13 @@ code ~/github/Mython
 - uruchom `F5`
 
 Jeśli chcesz pisać normalnie kod w `.ps`, to po tych krokach VS Code będzie rozpoznawał pliki, kolorował składnię i uruchamiał je bez ręcznego wpisywania komendy `python main.py plik.ps`.
+
+## AUR / yay
+
+Jeśli chcesz przygotować paczkę pod Arch Linux i `yay`, pliki są w [packaging/aur/README.md](./packaging/aur/README.md).
+
+Docelowo po publikacji do AUR instalacja będzie wyglądała tak:
+
+```bash
+yay -S mython-git
+```

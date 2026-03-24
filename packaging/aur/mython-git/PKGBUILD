@@ -1,0 +1,28 @@
+pkgname=mython-git
+pkgver=0.1.0.r0.g9613224
+pkgrel=1
+pkgdesc="Polska nakladka na Pythona z komenda mython"
+arch=('any')
+url="https://github.com/ManKrawiec/Mython"
+license=('custom')
+depends=('python' 'python-setuptools')
+makedepends=('git' 'python-build' 'python-installer' 'python-wheel')
+provides=('mython')
+conflicts=('mython')
+source=('git+https://github.com/ManKrawiec/Mython.git')
+sha256sums=('SKIP')
+
+pkgver() {
+  cd "$srcdir/Mython"
+  printf "0.1.0.r%s.g%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
+
+build() {
+  cd "$srcdir/Mython"
+  python -m build --wheel --no-isolation
+}
+
+package() {
+  cd "$srcdir/Mython"
+  python -m installer --destdir="$pkgdir" dist/*.whl
+}
